@@ -1,0 +1,15 @@
+.title {
+  font: var(--font-title);
+}
+
+.itemContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.outerContainer {
+  margin-top: 3rem;
+}
