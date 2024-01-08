@@ -28,7 +28,11 @@ export function TaskList({ title }: TaskListProps) {
         {tasks.length === 0 ? (
           <p>No tasks yet. Add one above to get started.</p>
         ) : (
-          tasks.map((task) => <ul key={task._id}>{TaskItem({ task })}</ul>)
+          tasks.map((task) => (
+            <ul key={task._id}>
+              <TaskItem task={task} />
+            </ul>
+          ))
         )}
       </div>
     </div>
